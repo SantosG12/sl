@@ -12,7 +12,8 @@ st.write("Ingrese los datos del paciente para predecir la probabilidad de proble
 
 # Cargar el dataset
 #dataset_path = '/mnt/data/ddf_cardio_data_fin_EDA.pickle'
-dataset_path = 'ddf_cardio_data_fin_EDA.pickle'
+#dataset_path = 'ddf_cardio_data_fin_EDA.pickle'
+dataset_path = 'modelo_ganador_logreg.pkl'
 df_data = pd.read_pickle(dataset_path)
 
 # Preprocesamiento del dataset
