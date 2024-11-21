@@ -27,8 +27,8 @@ df_data = pd.concat([df_cat, df_num], axis=1).copy()
 # Convertir booleanos y ajustar tipos
 df_data['Problema_CardioVascular'] = df_data['Problema_CardioVascular'].replace({True: 1, False: 0}).astype('int64')
 df_data['Genero'] = df_data['Genero'].replace({1: 'Female', 2: 'Male'}).astype('object')
-df_data['Fuma'] = df_data['Fuma'].replace({True: '1', False: '0'}).astype('object')
-df_data['Toma_alchol'] = df_data['Toma_alchol'].replace({True: '1', False: '0'}).astype('object')
+df_data['Fuma'] = df_data['Fuma'].replace({True: '0', False: '1'}).astype('object')
+df_data['Toma_alchol'] = df_data['Toma_alchol'].replace({True: '0', False: '1'}).astype('object')
 df_data['Actividad_fisica'] = df_data['Actividad_fisica'].replace({True: '1', False: '0'}).astype('object')
 
 # Separar X e Y
