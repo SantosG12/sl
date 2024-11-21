@@ -86,7 +86,7 @@ try:
 
     # Mostrar los resultados
     st.subheader("Resultado de la Predicción")
-    if prediccion[0] == 1:
+    if prediccion[0] == 1 and probabilidad > 0.8:
         st.error("El modelo predice que el paciente tiene riesgo de problemas cardiovasculares.")
     else:
         st.success("El modelo predice que el paciente NO tiene riesgo de problemas cardiovasculares.")

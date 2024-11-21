@@ -19,7 +19,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df_data = pd.read_pickle('/content/drive/MyDrive/Proyecto_sobre enfermedades cardiovasculares_DATA.T/DATASET/ddf_cardio_data|_fin_EDA.pickle')
+df_data = pd.read_pickle('/content/drive/MyDrive/Proyecto_sobre enfermedades cardiovasculares_DATA.T/DATASET/ddf_cardio_data_fin_EDA.pickle')
 
 df_data.head()
 
