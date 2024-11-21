@@ -9,7 +9,7 @@ st.write("Ingrese los datos del paciente para predecir la probabilidad de proble
 
 # Cargar el modelo y el preprocesador
 try:
-    modelo_cargado = joblib.load('modelo_ganador_logreg.pkl(1)')
+    modelo_cargado = joblib.load('modelo_ganador_logreg(1).pkl')
     preprocessor_cargado = joblib.load('preprocessor.pkl')
     st.success("Modelo y preprocesador cargados correctamente.")
 except Exception as e:
